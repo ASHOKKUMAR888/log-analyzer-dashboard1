@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Log File Analyzer</h1>
+    <form id="logUploadForm" enctype="multipart/form-data">
+        <label for="logFile">Upload Log File (.txt or .xyz):</label>
+        <input type="file" id="logFile" name="logFile" accept=".txt, .xyz" />
+        <button type="submit">Upload and Analyze</button>
+    </form>
+    <div id="analysisResult">
+        <h2>Analysis Results</h2>
+        <canvas id="errorChart" width="400" height="400"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
